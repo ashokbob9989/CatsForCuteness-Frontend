@@ -1,0 +1,17 @@
+<section class="fun-community-section">
+    <h2 class="section-title">Fun & Community</h2>
+    <p class="section-subtitle">Join the cat-loving community and have fun!</p>
+
+    <div class="fun-grid">
+        <div *ngFor="let feature of funFeatures" class="fun-card">
+            <div class="image-overlay">
+                <img [src]="'assets/' + feature.icon" alt="{{ feature.title }}">
+                <div class="overlay-content">
+                    <h3>{{ feature.title }}</h3>
+                    <p>{{ feature.description }}</p>
+                    <a [href]="feature.link" class="learn-more">Explore <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,254 @@
+$primary-color: #333;
+$background-color: linear-gradient(to bottom, #556b2f, #000); // Olive blue to black gradient
+$hover-bg: #eee;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$border-radius: 5px;
+
+.navbar {
+  background: $background-color;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: $shadow;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Use same width as .hero */
+  max-width: 98vw; /* Prevents extra right-side space */
+  height: 70px; /* Adjust if needed */
+  z-index: 1000;
+  box-sizing: border-box;
+
+  /* Brand Logo */
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between logo and text */
+    flex-shrink: 0;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 45px; /* Adjusted size */
+        width: auto;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    h1 {
+      font-size: 20px; /* Further reduced font size */
+      font-weight: bold;
+      color: white;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ff6b6b;
+      }
+    }
+  }
+
+  /* Navigation Links */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Further reduced gap */
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    li {
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 12px; /* Reduced padding */
+        display: block;
+        font-size: 13px; /* Further reduced font size */
+        transition: background 0.3s ease-in-out;
+
+        &:hover {
+          background: $hover-bg;
+          border-radius: $border-radius;
+          color: #333;
+        }
+      }
+
+      &.dropdown {
+        .dropdown-menu {
+          display: none;
+          position: absolute;
+          background: rgb(0, 0, 0);
+          list-style: none;
+          padding: 5px 0;
+          box-shadow: $shadow;
+          min-width: 180px;
+          border-radius: $border-radius;
+          z-index: 1000;
+
+          li {
+            padding: 8px 15px;
+            transition: background 0.3s;
+
+            &:hover {
+              background: $hover-bg;
+            }
+          }
+        }
+
+        &:hover > .dropdown-menu { /* Show the dropdown menu only when hovering over the dropdown heading */
+          display: block;
+        }
+      }
+    }
+
+    /* Search Bar */
+    .search-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      padding: 5px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      box-shadow: $shadow;
+      transition: transform 0.3s ease-in-out;
+
+      .search-box {
+        padding: 8px;
+        border: none;
+        outline: none;
+        width: 180px;
+        border-radius: 20px;
+      }
+
+      button {
+        background: $primary-color;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+
+        &:hover {
+          background: darken($primary-color, 10%);
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    /* Chatbot with Image */
+    .chatbot {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      box-shadow: $shadow;
+      cursor: pointer;
+
+      .chatbot-img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+
+      a {
+        font-weight: bold;
+      }
+
+      &:hover {
+        background: $hover-bg;
+      }
+    }
+
+    /* Authentication Buttons */
+    .auth {
+      display: flex;
+      gap: 10px;
+
+      a {
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: $border-radius;
+        font-weight: bold;
+        transition: background 0.3s ease-in-out;
+
+        &.login {
+          background: white;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+
+          &:hover {
+            background: $hover-bg;
+          }
+        }
+
+        &.signup {
+          background: #ff6b6b;
+          color: white;
+
+          &:hover {
+            background: darken(#ff6b6b, 10%);
+          }
+        }
+
+        &.logout {
+          background: transparent;
+          color: #ff6b6b; /* Logout button color fixed */
+          border: 1px solid #ff6b6b;
+
+          &:hover {
+            background: #ff6b6b;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+
+    .nav-list {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      gap: 10px;
+
+      li {
+        width: 100%;
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 10px;
+        }
+      }
+
+      .dropdown-menu {
+        position: relative;
+        box-shadow: none;
+      }
+    }
+  }
+}

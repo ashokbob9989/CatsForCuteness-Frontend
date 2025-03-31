@@ -1,0 +1,13 @@
+<section class="why-choose-us">
+    <h2>Why Choose <span>CatsForCuteness?</span></h2>
+    <p class="sub-text">Everything you need for your cat—adoption, care, shopping, and a thriving community!</p>
+  
+    <div class="features">
+      <div class="feature-card" *ngFor="let feature of features">
+        <i class="{{ feature.icon }}"></i>  <!-- Bootstrap Icon -->
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </section>
+  

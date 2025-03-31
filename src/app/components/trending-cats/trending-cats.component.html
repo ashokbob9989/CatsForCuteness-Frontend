@@ -1,0 +1,17 @@
+<section class="trending-cats">
+    <h2>🐾 Trending Cats</h2>
+    <p>Explore the most loved and adorable cat breeds trending right now!</p>
+  
+    <div class="cats-grid">
+      <div *ngFor="let cat of trendingCats" class="cat-card">
+        <img src="assets/{{ cat.image }}" alt="{{ cat.name }}" title="{{ cat.name }}">
+        <div class="cat-info">
+            <h3 class="cat-name">{{ cat.name }}</h3>
+            <p class="cat-type"><strong>Type:</strong> {{ cat.type }}</p>
+            <p class="cat-description">{{ cat.description }}</p>
+            <button class="buy-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,0 +1,132 @@
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1100px;
+      margin: auto;
+    }
+  
+    .footer-about {
+      flex: 1;
+      min-width: 250px;
+      text-align: left;
+  
+      .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #f8f9fa;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #ccc;
+      }
+    }
+  
+    .footer-links {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+  
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #f8f9fa;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      ul li {
+        margin: 5px 0;
+      }
+  
+      ul li a {
+        color: #ddd;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+  
+      ul li a:hover {
+        color: #007bff;
+      }
+    }
+  
+    .footer-social {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;  /* Center text */
+      
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #f8f9fa;
+      }
+  
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+  
+      .social-icon {
+        font-size: 1.5rem;
+        color: #ddd;
+        text-decoration: none;
+        transition: color 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; /* Space between icon and text */
+      }
+  
+      .social-icon i {
+        font-size: 1.5rem; /* Ensure the icon is visible */
+      }
+  
+      .social-icon:hover {
+        color: #007bff;
+      }
+    }
+  
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #444;
+      font-size: 0.85rem;
+      color: #bbb;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-social {
+      text-align: center;
+    }
+  
+    .footer-social .social-links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
+  

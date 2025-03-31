@@ -1,0 +1,15 @@
+<section class="care-section">
+    <h2 class="section-title">Expert Care for Your Cat</h2>
+    <p class="section-subtitle">Understand, nurture, and bond with your feline companion.</p>
+
+    <div class="care-grid">
+        <div *ngFor="let topic of careTopics" class="care-card">
+            <img [src]="topic.image" alt="topic.title" class="care-image">
+            <div class="care-content">
+                <h3>{{ topic.title }}</h3>
+                <p>{{ topic.description }}</p>
+                <a [href]="topic.link" class="learn-more">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>

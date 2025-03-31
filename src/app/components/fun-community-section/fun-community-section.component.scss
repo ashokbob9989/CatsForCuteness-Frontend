@@ -1,0 +1,114 @@
+.fun-community-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+
+  .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+  }
+
+  .section-subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 40px;
+  }
+
+  .fun-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      justify-content: center;
+  }
+
+  .fun-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      max-width: 140px;
+      
+      &:hover {
+          transform: translateY(-3px);
+      }
+
+      .image-overlay {
+          position: relative;
+          overflow: hidden;
+          border-radius: 10px;
+          width: 100%;
+          height: 140px; /* Fixed height for uniformity */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #ddd;
+          
+          img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; /* Ensures all images maintain equal ratio */
+              display: block;
+              transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover img {
+              transform: scale(1.1);
+          }
+      }
+
+      .overlay-content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          transform: translateY(100%);
+          transition: transform 0.3s ease-in-out;
+          text-align: left;
+
+          h3 {
+              font-size: 1rem;
+              margin-bottom: 3px;
+          }
+
+          p {
+              font-size: 0.8rem;
+              margin-bottom: 5px;
+          }
+
+          .learn-more {
+              color: #ffcc00;
+              font-weight: bold;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              transition: color 0.3s;
+
+              i {
+                  margin-left: 3px;
+              }
+
+              &:hover {
+                  color: #ffd633;
+              }
+          }
+      }
+
+      &:hover .overlay-content {
+          transform: translateY(0);
+      }
+  }
+
+  @media (max-width: 768px) {
+      .fun-grid {
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+  }
+}

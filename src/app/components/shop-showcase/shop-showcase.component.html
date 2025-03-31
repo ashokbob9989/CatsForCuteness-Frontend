@@ -1,0 +1,28 @@
+<section class="shop-showcase">
+    <h2 class="section-title">Shop for Your Cat</h2>
+    <p class="section-subtitle">Explore premium products for your feline friend.</p>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div *ngFor="let category of categories" class="category">
+            <img [src]="'assets/' + category.icon"
+                 alt="'Category: ' + category.name"
+                 title="'Explore ' + category.name + ' for your cat'">
+            <span>{{ category.name }}</span>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="products-grid">
+        <div *ngFor="let product of products" class="product-card">
+            <img [src]="product.image"
+                 alt="'Product: ' + product.name"
+                 title="'Buy ' + product.name + ' at best price'">
+            <div class="product-info">
+                <h3>{{ product.name }}</h3>
+                <p class="product-price">{{ product.price }}</p>
+                <button class="buy-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>

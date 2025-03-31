@@ -1,0 +1,13 @@
+<section class="adopt-rescue-section">
+    <h2 class="section-title">Adopt & Rescue</h2>
+    <p class="section-subtitle">Give a loving home to a cat in need.</p>
+
+    <div class="adopt-grid">
+        <div *ngFor="let option of adoptOptions" class="adopt-card">
+            <i [class]="option.icon" class="adopt-icon"></i>
+            <h3>{{ option.title }}</h3>
+            <p>{{ option.description }}</p>
+            <a [href]="option.link" class="learn-more">Explore <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
