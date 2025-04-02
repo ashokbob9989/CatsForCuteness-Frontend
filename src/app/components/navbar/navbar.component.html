@@ -1,70 +1,76 @@
 <nav class="navbar">
 
-  <div class="nav-brand">
-      <a href="/">
-          <img src="assets/logo.jpg" alt="logo">
-      </a>
-      <h1>CatsForCuteness</h1>
-  </div>
+    <div class="nav-brand">
+        <a href="/">
+            <img src="assets/logo.jpg" alt="logo">
+        </a>
+        <h1>CatsForCuteness</h1>
+    </div>
 
-  <ul class="nav-list">
-      <li><a href="/">Home</a></li>
+    <ul class="nav-list">
+        <li><a href="/">Home</a></li>
 
-      <li class="dropdown">
-          <a href="#">Shop</a>
-          <ul class="dropdown-menu">
-              <li><a href="/shop/clothes">Clothes</a></li>
-              <li><a href="/shop/food">Food Items</a></li>
-              <li><a href="/shop/accessories">Accessories</a></li>
-              <li><a href="/shop/beds">Beds</a></li>
-              <li><a href="/shop/toys">Toys</a></li>
-          </ul>
-      </li>
+        <li class="dropdown">
+            <a href="#">Shop</a>
+            <ul class="dropdown-menu">
+                <li><a href="/shop/clothes">Clothes</a></li>
+                <li><a href="/shop/food">Food Items</a></li>
+                <li><a href="/shop/accessories">Accessories</a></li>
+                <li><a href="/shop/beds">Beds</a></li>
+                <li><a href="/shop/toys">Toys</a></li>
+            </ul>
+        </li>
 
-      <li class="dropdown">
-          <a href="#">Care</a>
-          <ul class="dropdown-menu">
-              <li><a href="/care/behavior">Behavior</a></li>
-              <li><a href="/care/special-traits">Special Traits</a></li>
-              <li><a href="/care/mistakes">Common Mistakes</a></li>
-              <li><a href="/care/tips">Tips for Cat Lovers</a></li>
-          </ul>
-      </li>
+        <li class="dropdown">
+            <a href="#">Care</a>
+            <ul class="dropdown-menu">
+                <li><a href="/care/behavior">Behavior</a></li>
+                <li><a href="/care/special-traits">Special Traits</a></li>
+                <li><a href="/care/mistakes">Common Mistakes</a></li>
+                <li><a href="/care/tips">Tips for Cat Lovers</a></li>
+            </ul>
+        </li>
 
-      <li class="dropdown">
-          <a href="#">Adopt & Rescue</a>
-          <ul class="dropdown-menu">
-              <li><a href="/adopt/shelters">Shelters & Rescues</a></li>
-              <li><a href="/adopt/success-stories">Adoption Stories</a></li>
-          </ul>
-      </li>
+        <li class="dropdown">
+            <a href="#">Adopt & Rescue</a>
+            <ul class="dropdown-menu">
+                <li><a href="/adopt/shelters">Shelters & Rescues</a></li>
+                <li><a href="/adopt/success-stories">Adoption Stories</a></li>
+            </ul>
+        </li>
 
-      <li class="dropdown">
-          <a href="#">Fun & Community</a>
-          <ul class="dropdown-menu">
-              <li><a href="/fun/memes">Memes & Stories</a></li>
-              <li><a href="/community/forums">Forums</a></li>
-              <li><a href="/community/blogs">User Blogs</a></li>
-              <li><a href="/community/experts">Expert Advice</a></li>
-          </ul>
-      </li>
+        <li class="dropdown">
+            <a href="#">Fun & Community</a>
+            <ul class="dropdown-menu">
+                <li><a href="/fun/memes">Memes & Stories</a></li>
+                <li><a href="/community/forums">Forums</a></li>
+                <li><a href="/community/blogs">User Blogs</a></li>
+                <li><a href="/community/experts">Expert Advice</a></li>
+            </ul>
+        </li>
 
-      <li><a href="/contact">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
 
-      <li class="search-container">
-          <input type="text" class="search-box" placeholder="Find Cat..." />
-          <button>Search</button>
-      </li>
+        <li class="chatbot">
+            <img src="assets/chatbot.png" alt="Chatbot" class="chatbot-img" />
+        </li>
 
-      <li class="chatbot">
-          <img src="assets/chatbot.png" alt="Chatbot" class="chatbot-img" />
-      </li>
+        <!-- Login/Signup -->
+        <li class="auth" *ngIf="!isLoggedIn">
+            <button class="login" (click)="openLogin()">Login</button>
+            <button class="signup" (click)="openSignup()" [disabled]="isSignupDisabled">Signup</button>
+        </li>
+        <!-- User Menu -->
+        <li class="user-menu" [class.active]="userMenuOpen" *ngIf="isLoggedIn">
+            <button class="user-icon" (click)="toggleUserMenu()">👤</button>
+            <ul class="dropdown-menu" *ngIf="userMenuOpen">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Transaction History</a></li>
+                <li><a href="javascript:void(0);" (click)="logout()">Logout</a></li>
+            </ul>
+        </li>
 
-      <!-- Login/Signup -->
-      <li class="auth">
-          <a href="/login" class="login">Login</a>
-          <a href="/signup" class="signup">Signup</a>
-      </li>
-  </ul>
+    </ul>
 
 </nav>
