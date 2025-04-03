@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
   isLoggedIn: boolean = false;
   userMenuOpen = false;
   isSignupDisabled = false;
+  isNavOpen = false; // Tracks the state of the navbar for smaller screens
 
   constructor(private eRef: ElementRef) {}
 
@@ -29,10 +30,10 @@ export class NavbarComponent implements OnInit {
 
   openLogin() {
     this.loginEvent.emit();
-    if(typeof window!=='undefined'){
+    if (typeof window !== 'undefined') {
       localStorage.setItem('user', 'true');
     }
-    this.isLoggedIn=true;
+    this.isLoggedIn = true;
   }
 
   logout() {
@@ -46,6 +47,10 @@ export class NavbarComponent implements OnInit {
 
   toggleUserMenu() {
     this.userMenuOpen = !this.userMenuOpen;
+  }
+
+  toggleNav() {
+    this.isNavOpen = !this.isNavOpen; // Toggles the navbar visibility
   }
 
   checkLoginStatus() {

@@ -92,9 +92,19 @@ $border-radius: 5px;
           list-style: none;
           padding: 5px 0;
           box-shadow: $shadow;
-          min-width: 180px;
+          min-width: 180px; // Minimum width for dropdown
+          max-width: 90vw; // Ensure it doesn't exceed 90% of the viewport width
           border-radius: $border-radius;
           z-index: 1000;
+          overflow-wrap: break-word; // Prevent text overflow
+          left: 0; // Align dropdown to the left by default
+          transform: translateX(0); // Reset any horizontal overflow
+
+          // Adjust position if dropdown overflows the viewport
+          @media (max-width: 768px) {
+            right: 0; // Align to the right for smaller screens
+            left: auto; // Override left alignment
+          }
 
           li {
             padding: 8px 15px;
@@ -247,12 +257,36 @@ $border-radius: 5px;
     flex-direction: column;
     align-items: flex-start;
     padding: 15px;
+    position: relative;
+
+    .menu-toggle {
+      display: block;
+      background: $primary-color;
+      color: white;
+      padding: 10px 15px;
+      border-radius: $border-radius;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+      width: auto; // Adjust width for better alignment
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
 
     .nav-list {
       flex-direction: column;
-      width: 100%;
+      width: 60%;
       align-items: flex-start;
       gap: 10px;
+      display: none; // Initially hidden
+      background: black; // Black background for nav items
+      padding: 10px;
+      border-radius: $border-radius;
+
+      &.active {
+        display: flex; // Show items when active
+      }
 
       li {
         width: 100%;
@@ -261,12 +295,69 @@ $border-radius: 5px;
           display: block;
           width: 100%;
           padding: 10px;
+          color: white; // Ensure text is visible on black background
+          text-align: left;
         }
       }
 
       .dropdown-menu {
         position: relative;
         box-shadow: none;
+      }
+    }
+
+    .chatbot {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; // Align with nav items
+      margin-left: 0; // Reset margin for smaller screens
+      background: none; // Remove background for the container
+      padding: 0; // Remove padding for the container
+
+      .chatbot-img {
+        width: 50px; // Adjust size for smaller screens
+        height: 50px;
+        border-radius: 50%; // Make the image round
+        box-shadow: none; // Remove shadow for smaller screens
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+
+    .nav-list {
+      flex-direction: row;
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu-toggle {
+      display: none; // Hide toggle button on larger screens
+    }
+
+    .chatbot {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      box-shadow: $shadow;
+      cursor: pointer;
+      margin-left: auto; // Aligns the chatbot to the right
+
+      .chatbot-img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        background: $hover-bg;
       }
     }
   }

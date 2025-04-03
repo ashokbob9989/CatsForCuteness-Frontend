@@ -7,7 +7,10 @@
         <h1>CatsForCuteness</h1>
     </div>
 
-    <ul class="nav-list">
+    <!-- Menu Toggle Button -->
+    <button class="menu-toggle" (click)="toggleNav()">☰</button>
+
+    <ul class="nav-list" [class.active]="isNavOpen">
         <li><a href="/">Home</a></li>
 
         <li class="dropdown">
