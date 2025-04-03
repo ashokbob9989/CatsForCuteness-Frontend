@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, HostListener, Output } from '@angular/core';
+import { Component, ElementRef, HostListener, Output, EventEmitter, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,15 +8,19 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
-  isLoggedIn = false;
-  isSignupDisabled = false;
+export class NavbarComponent implements OnInit {
+  isLoggedIn: boolean = false;
   userMenuOpen = false;
+  isSignupDisabled = false;
 
   constructor(private eRef: ElementRef) {}
 
   @Output() signupEvent = new EventEmitter<void>();
   @Output() loginEvent = new EventEmitter<void>();
+
+  ngOnInit() {
+    this.checkLoginStatus(); 
+  }
 
   openSignup() {
     this.isSignupDisabled = true;
@@ -24,21 +28,32 @@ export class NavbarComponent {
   }
 
   openLogin() {
-    this.isLoggedIn = true;
     this.loginEvent.emit();
+    if(typeof window!=='undefined'){
+      localStorage.setItem('user', 'true');
+    }
+    this.isLoggedIn=true;
   }
 
   logout() {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('user');
+    }
     this.isLoggedIn = false;
-    this.isSignupDisabled = false;
     this.userMenuOpen = false;
+    this.isSignupDisabled = false; // Reset signup button state
   }
 
   toggleUserMenu() {
     this.userMenuOpen = !this.userMenuOpen;
   }
 
-  /** Close dropdown when clicking outside */
+  checkLoginStatus() {
+    if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+      this.isLoggedIn = !!localStorage.getItem('user');
+    }
+  }
+
   @HostListener('document:click', ['$event'])
   onClickOutside(event: Event) {
     if (!this.eRef.nativeElement.contains(event.target)) {

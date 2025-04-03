@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http'; // Ensure HttpClientModule is imported
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { WhyChooseUsComponent } from "./components/why-choose-us/why-choose-us.component";
@@ -17,36 +17,45 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HttpClientModule, NavbarComponent,
-    HeroSectionComponent, WhyChooseUsComponent,
-    TrendingCatsComponent, ShopShowcaseComponent,
-    AdoptRescueSectionComponent, FunCommunitySectionComponent,
-    ContactUsSectionComponent, FooterSectionComponent,
-    CareSectionComponent, SignupComponent, LoginComponent,
-  CommonModule],
+  imports: [
+    HttpClientModule,
+    NavbarComponent,
+    HeroSectionComponent,
+    WhyChooseUsComponent,
+    TrendingCatsComponent,
+    ShopShowcaseComponent,
+    AdoptRescueSectionComponent,
+    FunCommunitySectionComponent,
+    ContactUsSectionComponent,
+    FooterSectionComponent,
+    CareSectionComponent,
+    SignupComponent,
+    LoginComponent,
+    CommonModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'cats-for-cuteness';
 
-  showSignup=false;
-  showLogin=false;
+  showSignup = false;
+  showLogin = false;
 
-  openSignup(){
+  openSignup() {
     console.log("Signup button clicked");
-    this.showSignup=true;
-    this.showLogin=false;
+    this.showSignup = true;
+    this.showLogin = false;
   }
 
-  openLogin(){
+  openLogin() {
     console.log("Login button clicked");
-    this.showLogin=true;
-    this.showSignup=false;
+    this.showLogin = true;
+    this.showSignup = false;
   }
 
-  closeForm(){
-    this.showSignup=false;
-    this.showLogin=false;
+  closeForm() {
+    this.showSignup = false;
+    this.showLogin = false;
   }
 }
