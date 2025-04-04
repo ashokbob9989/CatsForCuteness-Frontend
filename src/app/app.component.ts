@@ -13,6 +13,7 @@ import { CareSectionComponent } from "./components/care-section/care-section.com
 import { SignupComponent } from "./components/signup/signup.component";
 import { LoginComponent } from "./components/login/login.component";
 import { CommonModule } from '@angular/common';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -31,13 +32,22 @@ import { CommonModule } from '@angular/common';
     CareSectionComponent,
     SignupComponent,
     LoginComponent,
-    CommonModule
+    CommonModule,
+    RouterOutlet,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'cats-for-cuteness';
+
+  showMainContent: boolean=true;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(() => {
+      this.showMainContent = this.router.url !== '/shop';
+    });
+  }
 
   showSignup = false;
   showLogin = false;
@@ -58,4 +68,5 @@ export class AppComponent {
     this.showSignup = false;
     this.showLogin = false;
   }
+
 }

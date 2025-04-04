@@ -1,0 +1,114 @@
+<!-- shopping-page.component.html -->
+<div class="shopping-container">
+    <h2 class="title">Browse Our Adorable Cats 🐾</h2>
+  
+    <!-- Filters -->
+    <div class="filters" aria-label="Cat Filters">
+      <input type="text" [(ngModel)]="searchTerm" placeholder="Search by name, breed, behavior..."
+        title="Search for cats by name, breed, or behavior" aria-label="Search for cats" />
+  
+      <select [(ngModel)]="selectedBreed" title="Filter by Breed" aria-label="Filter by Breed">
+        <option value="">All Breeds</option>
+        <option *ngFor="let breed of breeds">{{ breed }}</option>
+      </select>
+  
+      <select [(ngModel)]="selectedBehavior" title="Filter by Behavior" aria-label="Filter by Behavior">
+        <option value="">All Behaviors</option>
+        <option *ngFor="let behavior of behaviors">{{ behavior }}</option>
+      </select>
+  
+      <select [(ngModel)]="selectedGender" title="Filter by Gender" aria-label="Filter by Gender">
+        <option value="">All Genders</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+  
+      <select [(ngModel)]="selectedHealth" title="Filter by Health Status" aria-label="Filter by Health Status">
+        <option value="">All Health Status</option>
+        <option *ngFor="let health of healthStatuses">{{ health }}</option>
+      </select>
+  
+      <select [(ngModel)]="selectedSize" title="Filter by Size" aria-label="Filter by Size">
+        <option value="">All Sizes</option>
+        <option *ngFor="let size of sizes">{{ size }}</option>
+      </select>
+  
+      <select [(ngModel)]="sortOption" title="Sort Cats By" aria-label="Sort Cats By">
+        <option value="">Sort By</option>
+        <option value="price">Price</option>
+        <option value="age">Age</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+  
+    <!-- Cat Cards -->
+    <div class="cat-list" aria-label="List of Cats">
+      <div class="cat-card" *ngFor="let cat of paginatedCats()" aria-label="Cat Card">
+        <img [src]="cat.image" [alt]="cat.name" title="{{ cat.name }}" />
+        <h3>{{ cat.name }}</h3>
+        <p><strong>Breed:</strong> {{ cat.breed }}</p>
+        <p><strong>Behavior:</strong> {{ cat.behavior }}</p>
+        <p><strong>Gender:</strong> {{ cat.gender }} | <strong>Size:</strong> {{ cat.size }}</p>
+        <p><strong>Health:</strong> {{ cat.healthStatus }}</p>
+        <p><strong>Age:</strong> {{ cat.age }} years</p>
+        <p class="price"><strong>Price:</strong> ₹{{ cat.price }}</p>
+  
+        <p class="stars">
+          <strong>Rating:</strong>
+          <span *ngFor="let star of [1,2,3,4,5]">
+            <i [ngClass]="star <= cat.rating ? 'filled' : 'empty'" title="Rating: {{ cat.rating }}">★</i>
+          </span>
+          ({{ cat.reviews.length }} reviews)
+        </p>
+  
+        <div class="actions">
+          <button class="details-btn" (click)="viewDetails(cat)" [attr.aria-label]="'View details about ' + cat.name"
+            title="View details about {{ cat.name }}">
+            <span class="info-icon">i</span>
+          </button>
+          <button class="wishlist-btn" (click)="toggleWishlist(cat)"
+            [attr.aria-label]="'Add ' + cat.name + ' to wishlist'"
+            [title]="cat.inWishlist ? 'Remove from Wishlist' : 'Add to Wishlist'">
+            {{ cat.inWishlist ? '💔' : '❤️' }}
+          </button>
+          <button class="adopt-btn" (click)="adoptCat(cat)" [attr.aria-label]="'Adopt ' + cat.name"
+            title="Adopt {{ cat.name }}">
+            Adopt Me
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div class="pagination" aria-label="Pagination Controls">
+      <button (click)="prevPage()" [disabled]="currentPage === 1" title="Go to Previous Page"
+        aria-label="Previous Page">
+        Previous
+      </button>
+      <span>Page {{ currentPage }} of {{ totalPages() }}</span>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages()" title="Go to Next Page"
+        aria-label="Next Page">
+        Next
+      </button>
+    </div>
+  
+    <!-- Modal for Cat Details -->
+    <div class="modal" *ngIf="selectedCat" aria-label="Cat Details Modal">
+      <div class="modal-content">
+        <h2>{{ selectedCat.name }}</h2>
+        <img [src]="selectedCat.image" alt="cat-image" title="{{ selectedCat.name }}" />
+        <p>{{ selectedCat.description }}</p>
+        <p><strong>Perfect for:</strong> {{ selectedCat.suitableFor }}</p>
+  
+        <h4>Reviews:</h4>
+        <ul>
+          <li *ngFor="let review of selectedCat.reviews">{{ review }}</li>
+        </ul>
+  
+        <button class="close-btn" (click)="selectedCat = null" title="Close Details Modal"
+          aria-label="Close Details Modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>

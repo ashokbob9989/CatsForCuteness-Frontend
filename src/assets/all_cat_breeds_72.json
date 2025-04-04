@@ -1,0 +1,1541 @@
+[
+  {
+    "name": "Abyssinian Cat",
+    "breed": "Abyssinian",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2000,
+    "image": "assets/bengal.jpeg",
+    "rating": 3,
+    "reviews": [
+      "Abyssinian is adorable!",
+      "Love the Abyssinian breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Abyssinian is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Aegean Cat",
+    "breed": "Aegean",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2015,
+    "image": "https://example.com/images/cats/aegean.jpg",
+    "rating": 4,
+    "reviews": [
+      "Aegean is adorable!",
+      "Love the Aegean breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Aegean is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "American Bobtail Cat",
+    "breed": "American Bobtail",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2030,
+    "image": "https://example.com/images/cats/american_bobtail.jpg",
+    "rating": 5,
+    "reviews": [
+      "American Bobtail is adorable!",
+      "Love the American Bobtail breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The American Bobtail is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "American Curl Cat",
+    "breed": "American Curl",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2045,
+    "image": "https://example.com/images/cats/american_curl.jpg",
+    "rating": 3,
+    "reviews": [
+      "American Curl is adorable!",
+      "Love the American Curl breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The American Curl is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "American Shorthair Cat",
+    "breed": "American Shorthair",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2060,
+    "image": "https://example.com/images/cats/american_shorthair.jpg",
+    "rating": 4,
+    "reviews": [
+      "American Shorthair is adorable!",
+      "Love the American Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The American Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "American Wirehair Cat",
+    "breed": "American Wirehair",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2075,
+    "image": "https://example.com/images/cats/american_wirehair.jpg",
+    "rating": 5,
+    "reviews": [
+      "American Wirehair is adorable!",
+      "Love the American Wirehair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The American Wirehair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Arabian Mau Cat",
+    "breed": "Arabian Mau",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2090,
+    "image": "https://example.com/images/cats/arabian_mau.jpg",
+    "rating": 3,
+    "reviews": [
+      "Arabian Mau is adorable!",
+      "Love the Arabian Mau breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Arabian Mau is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Australian Mist Cat",
+    "breed": "Australian Mist",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2105,
+    "image": "https://example.com/images/cats/australian_mist.jpg",
+    "rating": 4,
+    "reviews": [
+      "Australian Mist is adorable!",
+      "Love the Australian Mist breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Australian Mist is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Balinese Cat",
+    "breed": "Balinese",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2120,
+    "image": "https://example.com/images/cats/balinese.jpg",
+    "rating": 5,
+    "reviews": [
+      "Balinese is adorable!",
+      "Love the Balinese breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Balinese is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Bambino Cat",
+    "breed": "Bambino",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2135,
+    "image": "https://example.com/images/cats/bambino.jpg",
+    "rating": 3,
+    "reviews": [
+      "Bambino is adorable!",
+      "Love the Bambino breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Bambino is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Bengal Cat",
+    "breed": "Bengal",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2150,
+    "image": "https://example.com/images/cats/bengal.jpg",
+    "rating": 4,
+    "reviews": [
+      "Bengal is adorable!",
+      "Love the Bengal breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Bengal is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Birman Cat",
+    "breed": "Birman",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2165,
+    "image": "https://example.com/images/cats/birman.jpg",
+    "rating": 5,
+    "reviews": [
+      "Birman is adorable!",
+      "Love the Birman breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Birman is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Bombay Cat",
+    "breed": "Bombay",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2180,
+    "image": "https://example.com/images/cats/bombay.jpg",
+    "rating": 3,
+    "reviews": [
+      "Bombay is adorable!",
+      "Love the Bombay breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Bombay is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Brazilian Shorthair Cat",
+    "breed": "Brazilian Shorthair",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2195,
+    "image": "https://example.com/images/cats/brazilian_shorthair.jpg",
+    "rating": 4,
+    "reviews": [
+      "Brazilian Shorthair is adorable!",
+      "Love the Brazilian Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Brazilian Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "British Longhair Cat",
+    "breed": "British Longhair",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2210,
+    "image": "https://example.com/images/cats/british_longhair.jpg",
+    "rating": 5,
+    "reviews": [
+      "British Longhair is adorable!",
+      "Love the British Longhair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The British Longhair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "British Shorthair Cat",
+    "breed": "British Shorthair",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2225,
+    "image": "https://example.com/images/cats/british_shorthair.jpg",
+    "rating": 3,
+    "reviews": [
+      "British Shorthair is adorable!",
+      "Love the British Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The British Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Burmese Cat",
+    "breed": "Burmese",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2240,
+    "image": "https://example.com/images/cats/burmese.jpg",
+    "rating": 4,
+    "reviews": [
+      "Burmese is adorable!",
+      "Love the Burmese breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Burmese is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Burmilla Cat",
+    "breed": "Burmilla",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2255,
+    "image": "https://example.com/images/cats/burmilla.jpg",
+    "rating": 5,
+    "reviews": [
+      "Burmilla is adorable!",
+      "Love the Burmilla breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Burmilla is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "California Spangled Cat",
+    "breed": "California Spangled",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2270,
+    "image": "https://example.com/images/cats/california_spangled.jpg",
+    "rating": 3,
+    "reviews": [
+      "California Spangled is adorable!",
+      "Love the California Spangled breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The California Spangled is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Chantilly-Tiffany Cat",
+    "breed": "Chantilly-Tiffany",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2285,
+    "image": "https://example.com/images/cats/chantilly-tiffany.jpg",
+    "rating": 4,
+    "reviews": [
+      "Chantilly-Tiffany is adorable!",
+      "Love the Chantilly-Tiffany breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Chantilly-Tiffany is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Chartreux Cat",
+    "breed": "Chartreux",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2300,
+    "image": "https://example.com/images/cats/chartreux.jpg",
+    "rating": 5,
+    "reviews": [
+      "Chartreux is adorable!",
+      "Love the Chartreux breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Chartreux is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Chausie Cat",
+    "breed": "Chausie",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2315,
+    "image": "https://example.com/images/cats/chausie.jpg",
+    "rating": 3,
+    "reviews": [
+      "Chausie is adorable!",
+      "Love the Chausie breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Chausie is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Cheetoh Cat",
+    "breed": "Cheetoh",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2330,
+    "image": "https://example.com/images/cats/cheetoh.jpg",
+    "rating": 4,
+    "reviews": [
+      "Cheetoh is adorable!",
+      "Love the Cheetoh breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Cheetoh is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Colorpoint Shorthair Cat",
+    "breed": "Colorpoint Shorthair",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2345,
+    "image": "https://example.com/images/cats/colorpoint_shorthair.jpg",
+    "rating": 5,
+    "reviews": [
+      "Colorpoint Shorthair is adorable!",
+      "Love the Colorpoint Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Colorpoint Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Cornish Rex Cat",
+    "breed": "Cornish Rex",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2360,
+    "image": "https://example.com/images/cats/cornish_rex.jpg",
+    "rating": 3,
+    "reviews": [
+      "Cornish Rex is adorable!",
+      "Love the Cornish Rex breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Cornish Rex is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Cymric Cat",
+    "breed": "Cymric",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2375,
+    "image": "https://example.com/images/cats/cymric.jpg",
+    "rating": 4,
+    "reviews": [
+      "Cymric is adorable!",
+      "Love the Cymric breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Cymric is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Cyprus Cat",
+    "breed": "Cyprus",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2390,
+    "image": "https://example.com/images/cats/cyprus.jpg",
+    "rating": 5,
+    "reviews": [
+      "Cyprus is adorable!",
+      "Love the Cyprus breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Cyprus is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Devon Rex Cat",
+    "breed": "Devon Rex",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2405,
+    "image": "https://example.com/images/cats/devon_rex.jpg",
+    "rating": 3,
+    "reviews": [
+      "Devon Rex is adorable!",
+      "Love the Devon Rex breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Devon Rex is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Donskoy Cat",
+    "breed": "Donskoy",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2420,
+    "image": "https://example.com/images/cats/donskoy.jpg",
+    "rating": 4,
+    "reviews": [
+      "Donskoy is adorable!",
+      "Love the Donskoy breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Donskoy is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Dragon Li Cat",
+    "breed": "Dragon Li",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2435,
+    "image": "https://example.com/images/cats/dragon_li.jpg",
+    "rating": 5,
+    "reviews": [
+      "Dragon Li is adorable!",
+      "Love the Dragon Li breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Dragon Li is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Dwelf Cat",
+    "breed": "Dwelf",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2450,
+    "image": "https://example.com/images/cats/dwelf.jpg",
+    "rating": 3,
+    "reviews": [
+      "Dwelf is adorable!",
+      "Love the Dwelf breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Dwelf is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Egyptian Mau Cat",
+    "breed": "Egyptian Mau",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2465,
+    "image": "https://example.com/images/cats/egyptian_mau.jpg",
+    "rating": 4,
+    "reviews": [
+      "Egyptian Mau is adorable!",
+      "Love the Egyptian Mau breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Egyptian Mau is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "European Shorthair Cat",
+    "breed": "European Shorthair",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2480,
+    "image": "https://example.com/images/cats/european_shorthair.jpg",
+    "rating": 5,
+    "reviews": [
+      "European Shorthair is adorable!",
+      "Love the European Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The European Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Exotic Shorthair Cat",
+    "breed": "Exotic Shorthair",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2495,
+    "image": "https://example.com/images/cats/exotic_shorthair.jpg",
+    "rating": 3,
+    "reviews": [
+      "Exotic Shorthair is adorable!",
+      "Love the Exotic Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Exotic Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Foldex Cat",
+    "breed": "Foldex",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2510,
+    "image": "https://example.com/images/cats/foldex.jpg",
+    "rating": 4,
+    "reviews": [
+      "Foldex is adorable!",
+      "Love the Foldex breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Foldex is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "German Rex Cat",
+    "breed": "German Rex",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2525,
+    "image": "https://example.com/images/cats/german_rex.jpg",
+    "rating": 5,
+    "reviews": [
+      "German Rex is adorable!",
+      "Love the German Rex breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The German Rex is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Havana Brown Cat",
+    "breed": "Havana Brown",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2540,
+    "image": "https://example.com/images/cats/havana_brown.jpg",
+    "rating": 3,
+    "reviews": [
+      "Havana Brown is adorable!",
+      "Love the Havana Brown breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Havana Brown is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Highlander Cat",
+    "breed": "Highlander",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2555,
+    "image": "https://example.com/images/cats/highlander.jpg",
+    "rating": 4,
+    "reviews": [
+      "Highlander is adorable!",
+      "Love the Highlander breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Highlander is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Himalayan Cat",
+    "breed": "Himalayan",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2570,
+    "image": "https://example.com/images/cats/himalayan.jpg",
+    "rating": 5,
+    "reviews": [
+      "Himalayan is adorable!",
+      "Love the Himalayan breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Himalayan is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Japanese Bobtail Cat",
+    "breed": "Japanese Bobtail",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2585,
+    "image": "https://example.com/images/cats/japanese_bobtail.jpg",
+    "rating": 3,
+    "reviews": [
+      "Japanese Bobtail is adorable!",
+      "Love the Japanese Bobtail breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Japanese Bobtail is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Javanese Cat",
+    "breed": "Javanese",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2600,
+    "image": "https://example.com/images/cats/javanese.jpg",
+    "rating": 4,
+    "reviews": [
+      "Javanese is adorable!",
+      "Love the Javanese breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Javanese is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Khao Manee Cat",
+    "breed": "Khao Manee",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2615,
+    "image": "https://example.com/images/cats/khao_manee.jpg",
+    "rating": 5,
+    "reviews": [
+      "Khao Manee is adorable!",
+      "Love the Khao Manee breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Khao Manee is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Korat Cat",
+    "breed": "Korat",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2630,
+    "image": "https://example.com/images/cats/korat.jpg",
+    "rating": 3,
+    "reviews": [
+      "Korat is adorable!",
+      "Love the Korat breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Korat is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Kurilian Bobtail Cat",
+    "breed": "Kurilian Bobtail",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2645,
+    "image": "https://example.com/images/cats/kurilian_bobtail.jpg",
+    "rating": 4,
+    "reviews": [
+      "Kurilian Bobtail is adorable!",
+      "Love the Kurilian Bobtail breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Kurilian Bobtail is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "LaPerm Cat",
+    "breed": "LaPerm",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2660,
+    "image": "https://example.com/images/cats/laperm.jpg",
+    "rating": 5,
+    "reviews": [
+      "LaPerm is adorable!",
+      "Love the LaPerm breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The LaPerm is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Lykoi Cat",
+    "breed": "Lykoi",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2675,
+    "image": "https://example.com/images/cats/lykoi.jpg",
+    "rating": 3,
+    "reviews": [
+      "Lykoi is adorable!",
+      "Love the Lykoi breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Lykoi is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Maine Coon Cat",
+    "breed": "Maine Coon",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2690,
+    "image": "https://example.com/images/cats/maine_coon.jpg",
+    "rating": 4,
+    "reviews": [
+      "Maine Coon is adorable!",
+      "Love the Maine Coon breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Maine Coon is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Manx Cat",
+    "breed": "Manx",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2705,
+    "image": "https://example.com/images/cats/manx.jpg",
+    "rating": 5,
+    "reviews": [
+      "Manx is adorable!",
+      "Love the Manx breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Manx is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Mekong Bobtail Cat",
+    "breed": "Mekong Bobtail",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2720,
+    "image": "https://example.com/images/cats/mekong_bobtail.jpg",
+    "rating": 3,
+    "reviews": [
+      "Mekong Bobtail is adorable!",
+      "Love the Mekong Bobtail breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Mekong Bobtail is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Minskin Cat",
+    "breed": "Minskin",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2735,
+    "image": "https://example.com/images/cats/minskin.jpg",
+    "rating": 4,
+    "reviews": [
+      "Minskin is adorable!",
+      "Love the Minskin breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Minskin is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Napoleon Cat",
+    "breed": "Napoleon",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2750,
+    "image": "https://example.com/images/cats/napoleon.jpg",
+    "rating": 5,
+    "reviews": [
+      "Napoleon is adorable!",
+      "Love the Napoleon breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Napoleon is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Nebelung Cat",
+    "breed": "Nebelung",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2765,
+    "image": "https://example.com/images/cats/nebelung.jpg",
+    "rating": 3,
+    "reviews": [
+      "Nebelung is adorable!",
+      "Love the Nebelung breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Nebelung is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Norwegian Forest Cat Cat",
+    "breed": "Norwegian Forest Cat",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2780,
+    "image": "https://example.com/images/cats/norwegian_forest_cat.jpg",
+    "rating": 4,
+    "reviews": [
+      "Norwegian Forest Cat is adorable!",
+      "Love the Norwegian Forest Cat breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Norwegian Forest Cat is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Ocicat Cat",
+    "breed": "Ocicat",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2795,
+    "image": "https://example.com/images/cats/ocicat.jpg",
+    "rating": 5,
+    "reviews": [
+      "Ocicat is adorable!",
+      "Love the Ocicat breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Ocicat is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Ojos Azules Cat",
+    "breed": "Ojos Azules",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2810,
+    "image": "https://example.com/images/cats/ojos_azules.jpg",
+    "rating": 3,
+    "reviews": [
+      "Ojos Azules is adorable!",
+      "Love the Ojos Azules breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Ojos Azules is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Oriental Bicolor Cat",
+    "breed": "Oriental Bicolor",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2825,
+    "image": "https://example.com/images/cats/oriental_bicolor.jpg",
+    "rating": 4,
+    "reviews": [
+      "Oriental Bicolor is adorable!",
+      "Love the Oriental Bicolor breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Oriental Bicolor is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Oriental Longhair Cat",
+    "breed": "Oriental Longhair",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2840,
+    "image": "https://example.com/images/cats/oriental_longhair.jpg",
+    "rating": 5,
+    "reviews": [
+      "Oriental Longhair is adorable!",
+      "Love the Oriental Longhair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Oriental Longhair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Oriental Shorthair Cat",
+    "breed": "Oriental Shorthair",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2855,
+    "image": "https://example.com/images/cats/oriental_shorthair.jpg",
+    "rating": 3,
+    "reviews": [
+      "Oriental Shorthair is adorable!",
+      "Love the Oriental Shorthair breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Oriental Shorthair is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Persian Cat",
+    "breed": "Persian",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2870,
+    "image": "https://example.com/images/cats/persian.jpg",
+    "rating": 4,
+    "reviews": [
+      "Persian is adorable!",
+      "Love the Persian breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Persian is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Peterbald Cat",
+    "breed": "Peterbald",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2885,
+    "image": "https://example.com/images/cats/peterbald.jpg",
+    "rating": 5,
+    "reviews": [
+      "Peterbald is adorable!",
+      "Love the Peterbald breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Peterbald is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Pixie-bob Cat",
+    "breed": "Pixie-bob",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2900,
+    "image": "https://example.com/images/cats/pixie-bob.jpg",
+    "rating": 3,
+    "reviews": [
+      "Pixie-bob is adorable!",
+      "Love the Pixie-bob breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Pixie-bob is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Ragamuffin Cat",
+    "breed": "Ragamuffin",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2915,
+    "image": "https://example.com/images/cats/ragamuffin.jpg",
+    "rating": 4,
+    "reviews": [
+      "Ragamuffin is adorable!",
+      "Love the Ragamuffin breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Ragamuffin is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Ragdoll Cat",
+    "breed": "Ragdoll",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 2930,
+    "image": "https://example.com/images/cats/ragdoll.jpg",
+    "rating": 5,
+    "reviews": [
+      "Ragdoll is adorable!",
+      "Love the Ragdoll breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Ragdoll is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Russian Blue Cat",
+    "breed": "Russian Blue",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 2945,
+    "image": "https://example.com/images/cats/russian_blue.jpg",
+    "rating": 3,
+    "reviews": [
+      "Russian Blue is adorable!",
+      "Love the Russian Blue breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Russian Blue is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Savannah Cat",
+    "breed": "Savannah",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 2960,
+    "image": "https://example.com/images/cats/savannah.jpg",
+    "rating": 4,
+    "reviews": [
+      "Savannah is adorable!",
+      "Love the Savannah breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Savannah is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Scottish Fold Cat",
+    "breed": "Scottish Fold",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 2975,
+    "image": "https://example.com/images/cats/scottish_fold.jpg",
+    "rating": 5,
+    "reviews": [
+      "Scottish Fold is adorable!",
+      "Love the Scottish Fold breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Scottish Fold is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Selkirk Rex Cat",
+    "breed": "Selkirk Rex",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 2990,
+    "image": "https://example.com/images/cats/selkirk_rex.jpg",
+    "rating": 3,
+    "reviews": [
+      "Selkirk Rex is adorable!",
+      "Love the Selkirk Rex breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Selkirk Rex is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Serengeti Cat",
+    "breed": "Serengeti",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 3005,
+    "image": "https://example.com/images/cats/serengeti.jpg",
+    "rating": 4,
+    "reviews": [
+      "Serengeti is adorable!",
+      "Love the Serengeti breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Serengeti is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Siamese Cat",
+    "breed": "Siamese",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 3020,
+    "image": "https://example.com/images/cats/siamese.jpg",
+    "rating": 5,
+    "reviews": [
+      "Siamese is adorable!",
+      "Love the Siamese breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Siamese is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Siberian Cat",
+    "breed": "Siberian",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 3035,
+    "image": "https://example.com/images/cats/siberian.jpg",
+    "rating": 3,
+    "reviews": [
+      "Siberian is adorable!",
+      "Love the Siberian breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Siberian is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Singapura Cat",
+    "breed": "Singapura",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 3050,
+    "image": "https://example.com/images/cats/singapura.jpg",
+    "rating": 4,
+    "reviews": [
+      "Singapura is adorable!",
+      "Love the Singapura breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Singapura is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Snowshoe Cat",
+    "breed": "Snowshoe",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 3065,
+    "image": "https://example.com/images/cats/snowshoe.jpg",
+    "rating": 5,
+    "reviews": [
+      "Snowshoe is adorable!",
+      "Love the Snowshoe breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Snowshoe is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Sokoke Cat",
+    "breed": "Sokoke",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 3080,
+    "image": "https://example.com/images/cats/sokoke.jpg",
+    "rating": 3,
+    "reviews": [
+      "Sokoke is adorable!",
+      "Love the Sokoke breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Sokoke is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Somali Cat",
+    "breed": "Somali",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 3095,
+    "image": "https://example.com/images/cats/somali.jpg",
+    "rating": 4,
+    "reviews": [
+      "Somali is adorable!",
+      "Love the Somali breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Somali is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Sphynx Cat",
+    "breed": "Sphynx",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 3110,
+    "image": "https://example.com/images/cats/sphynx.jpg",
+    "rating": 5,
+    "reviews": [
+      "Sphynx is adorable!",
+      "Love the Sphynx breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Sphynx is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Thai Cat",
+    "breed": "Thai",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 3125,
+    "image": "https://example.com/images/cats/thai.jpg",
+    "rating": 3,
+    "reviews": [
+      "Thai is adorable!",
+      "Love the Thai breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Thai is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Tonkinese Cat",
+    "breed": "Tonkinese",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 2,
+    "price": 3140,
+    "image": "https://example.com/images/cats/tonkinese.jpg",
+    "rating": 4,
+    "reviews": [
+      "Tonkinese is adorable!",
+      "Love the Tonkinese breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Tonkinese is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Toyger Cat",
+    "breed": "Toyger",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 3,
+    "price": 3155,
+    "image": "https://example.com/images/cats/toyger.jpg",
+    "rating": 5,
+    "reviews": [
+      "Toyger is adorable!",
+      "Love the Toyger breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Toyger is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Turkish Angora Cat",
+    "breed": "Turkish Angora",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 4,
+    "price": 3170,
+    "image": "https://example.com/images/cats/turkish_angora.jpg",
+    "rating": 3,
+    "reviews": [
+      "Turkish Angora is adorable!",
+      "Love the Turkish Angora breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Turkish Angora is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Turkish Van Cat",
+    "breed": "Turkish Van",
+    "behavior": "Calm",
+    "gender": "Female",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 5,
+    "price": 3185,
+    "image": "https://example.com/images/cats/turkish_van.jpg",
+    "rating": 4,
+    "reviews": [
+      "Turkish Van is adorable!",
+      "Love the Turkish Van breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Turkish Van is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  },
+  {
+    "name": "Ukrainian Levkoy Cat",
+    "breed": "Ukrainian Levkoy",
+    "behavior": "Playful",
+    "gender": "Male",
+    "size": "Medium",
+    "healthStatus": "Vaccinated",
+    "age": 1,
+    "price": 3200,
+    "image": "https://example.com/images/cats/ukrainian_levkoy.jpg",
+    "rating": 5,
+    "reviews": [
+      "Ukrainian Levkoy is adorable!",
+      "Love the Ukrainian Levkoy breed!"
+    ],
+    "suitableFor": "All families and pet lovers",
+    "description": "The Ukrainian Levkoy is a lovely cat breed with a unique personality.",
+    "inWishlist": false
+  }
+]

@@ -1,14 +1,18 @@
 <div class="app">
     <app-navbar (signupEvent)="openSignup()" (loginEvent)="openLogin()"></app-navbar>
-    <app-hero-section></app-hero-section>
-    <app-why-choose-us></app-why-choose-us>
-    <app-trending-cats></app-trending-cats>
-    <app-shop-showcase></app-shop-showcase>
-    <app-care></app-care>
-    <app-adopt-rescue-section></app-adopt-rescue-section>
-    <app-fun-community-section></app-fun-community-section>
-    <app-contact-us-section></app-contact-us-section>
-    <app-footer-section></app-footer-section>
+    <router-outlet></router-outlet>
+
+    <div *ngIf="showMainContent">
+        <app-hero-section></app-hero-section>
+        <app-why-choose-us></app-why-choose-us>
+        <app-trending-cats></app-trending-cats>
+        <app-shop-showcase></app-shop-showcase>
+        <app-care></app-care>
+        <app-adopt-rescue-section></app-adopt-rescue-section>
+        <app-fun-community-section></app-fun-community-section>
+        <app-contact-us-section></app-contact-us-section>
+        <app-footer-section></app-footer-section>
+    </div>
 </div>
 
 <app-signup *ngIf="showSignup" (close)="closeForm()" (switchToLoginEvent)="openLogin()"></app-signup>
