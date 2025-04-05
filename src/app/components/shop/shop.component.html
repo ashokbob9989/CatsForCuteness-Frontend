@@ -1,0 +1,55 @@
+<div class="shop-container">
+
+    <!-- Filter and Sort -->
+    <div class="filter-bar">
+      <label for="categorySelect">Filter by Category:</label>
+      <select id="categorySelect" #cat (change)="changeCategory(cat.value)">
+        <option *ngFor="let c of categories" [value]="c">{{ c }}</option>
+      </select>
+      
+      
+  
+      <label for="sortSelect">Sort by Price:</label>
+      <select id="sortSelect" #cat (change)="changeSort(cat.value)">
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    </div>
+  
+    <!-- Grouped Display -->
+    <div *ngFor="let group of groupedCategories; trackBy: trackByCategory" class="category-group">
+      <h3 class="category-title">{{ group }}</h3>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div 
+          *ngFor="let item of itemsGroupedByCategory[group]; trackBy: trackByItemId" 
+          class="shop-card"
+          [title]="item.name + ' - $' + item.price.toFixed(2)">
+  
+          <img 
+            [src]="item.imageUrl" 
+            alt="'Image of ' + item.name" 
+            class="shop-img"
+            [title]="'Image of ' + item.name">
+  
+          <h4 class="shop-title">{{ item.name }}</h4>
+          <p class="shop-speciality" [title]="item.speciality">{{ item.speciality }}</p>
+          <p class="shop-price">$ {{ item.price.toFixed(2) }}</p>
+  
+          <div class="shop-buttons">
+            <button (click)="showInfo(item)" class="btn btn-info" [title]="'View more about ' + item.name">More Info</button>
+            <button (click)="addToWishlist(item.id)" class="btn btn-wishlist" [title]="'Add ' + item.name + ' to wishlist'">Wishlist</button>
+            <button (click)="goToOrder(item)" class="btn btn-buy" [title]="'Buy ' + item.name + ' now'">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div class="pagination">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+      <span>Page {{ currentPage }} of {{ totalPages }}</span>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+  </div>
+  

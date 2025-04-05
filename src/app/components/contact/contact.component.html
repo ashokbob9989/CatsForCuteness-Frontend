@@ -1,0 +1,37 @@
+<div class="contact-wrapper">
+    <h1 class="contact-title">Get In Touch with Our Cat Squad 🐾</h1>
+  
+    <div class="contact-card">
+      <form class="contact-form" (submit)="sendMessage(); $event.preventDefault();">
+        <input type="text" placeholder="Your Name" [(ngModel)]="name" name="name" required />
+        <input type="email" placeholder="Your Email" [(ngModel)]="email" name="email" required />
+        <input type="text" placeholder="Subject (e.g. Adoption, Support...)" [(ngModel)]="subject" name="subject" />
+        <textarea placeholder="Type your message here..." [(ngModel)]="message" name="message" rows="5"></textarea>
+        <button type="submit">Send Message ✉️</button>
+      </form>
+  
+      <div class="contact-info">
+        <h3>Visit Us 🐈</h3>
+        <p><strong>Location:</strong> 123 Cat Lane, Meowtown, Purrland</p>
+        <p><strong>Hours:</strong> Mon–Sat, 10am–6pm</p>
+  
+        <h3>Follow Our Tails 🐾</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i> &#64;CatsForCuteness</a>
+          <a href="#"><i class="fab fa-twitter"></i> &#64;CutenessCats</a>
+          <a href="#"><i class="fab fa-facebook"></i> CatsForCuteness</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="feedback-box">
+      <h2>Send a Meow 🐱</h2>
+      <textarea [(ngModel)]="feedback" placeholder="Leave us a sweet note or idea..."></textarea>
+      <button (click)="sendFeedback()">Meow It 💌</button>
+    </div>
+  
+    <div class="chat-cat-icon" title="Chat with our Meow team!">
+      💬🐱
+    </div>
+  </div>
+  

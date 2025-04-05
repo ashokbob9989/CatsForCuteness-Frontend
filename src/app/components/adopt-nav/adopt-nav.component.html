@@ -1,0 +1,42 @@
+<div class="adopt-nav-wrapper">
+
+    <!-- Shelters & Rescues Section -->
+    <section class="shelter-section">
+      <h2>Shelters & Rescues</h2>
+      <div class="shelter-grid">
+        <div *ngFor="let shelter of shelters" class="shelter-card">
+          <h3>{{ shelter.name }}</h3>
+          <p><strong>Location:</strong> {{ shelter.location }}</p>
+          <p><strong>Contact:</strong> {{ shelter.contact }}</p>
+          <p class="status" [ngClass]="{ 'open': shelter.status === 'Open', 'closed': shelter.status !== 'Open' }">
+            Status: {{ shelter.status }}
+          </p>
+          <button class="visit-btn">Visit</button>
+          <button class="contact-btn">Contact</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Adoption Stories Section -->
+    <section class="stories-section">
+      <h2>Adoption Stories</h2>
+      <div class="story-card" *ngFor="let s of stories; let i = index">
+        <h4>{{ s.user }}</h4>
+        <p class="story-text">{{ s.story }}</p>
+  
+        <div class="actions">
+          <button (click)="likeStory(i)">❤️ {{ s.likes }}</button>
+        </div>
+  
+        <div class="comments">
+          <h5>Comments</h5>
+          <div *ngFor="let comment of s.comments" class="comment">{{ comment }}</div>
+  
+          <textarea [(ngModel)]="s.newComment" placeholder="Add a comment..."></textarea>
+          <button (click)="addComment(i)">Post Comment</button>
+        </div>
+      </div>
+    </section>
+  
+  </div>
+  

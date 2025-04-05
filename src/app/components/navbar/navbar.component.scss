@@ -1,39 +1,99 @@
-$primary-color: #333;
-$background-color: linear-gradient(to bottom, #556b2f, #000); // Olive green to black gradient
-$hover-bg: #eee;
-$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-$border-radius: 5px;
+// Variables
+$primary-dark: #000;
+$highlight: #ff6b6b;
+$soft-blue: #6b9bff;
+$yellow: #f1c40f;
+$white: #fff;
+$shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+$radius: 10px;
 
+// Navbar container
 .navbar {
-  background: $background-color;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: $shadow;
+  background: linear-gradient(to right, #1a1a1a, #000);
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 98vw;
-  height: 70px;
+  padding: 12px 25px;
   z-index: 1000;
+  box-shadow: $shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative;
 
   .nav-brand {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 
-    a {
-      display: flex;
-      align-items: center;
+    a img {
+      height: 45px;
+      border-radius: 8px;
+      box-shadow: $shadow;
+      transition: transform 0.3s ease;
 
-      img {
-        height: 45px;
-        width: auto;
-        border-radius: 8px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: $white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: $white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $white;
+        padding: 8px 14px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: $white;
+          color: $primary-dark;
+          border-radius: $radius;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .chatbot {
+      .chatbot-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid white;
+        transition: transform 0.3s ease;
 
         &:hover {
           transform: scale(1.1);
@@ -41,323 +101,188 @@ $border-radius: 5px;
       }
     }
 
-    h1 {
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      letter-spacing: 1px;
-      transition: color 0.3s;
+    .auth {
+      display: flex;
+      gap: 10px;
 
-      &:hover {
-        color: #ff6b6b;
+      .login,
+      .signup {
+        background: none;
+        border: none;
+        color: $white;
+        padding: 8px 18px;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .login {
+        background: $soft-blue;
+
+        &:hover {
+          background: darken($soft-blue, 10%);
+        }
+      }
+
+      .signup {
+        background: $highlight;
+
+        &:hover {
+          background: darken($highlight, 10%);
+        }
+
+        &:disabled {
+          background: gray;
+          cursor: not-allowed;
+        }
       }
     }
-  }
 
-  .nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30px; // Increased gap for better spacing
-    padding: 0;
-    margin-left: 120px;
-    flex-grow: 1;
-    justify-content: center;
-
-    li {
+    .user-menu {
       position: relative;
 
-      a {
-        text-decoration: none;
-        color: white;
-        padding: 10px 15px;
-        font-size: 14px;
-        display: block;
-        transition: background 0.3s ease-in-out;
+      .user-icon {
+        background: $yellow;
+        color: black;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
 
         &:hover {
-          background: $hover-bg;
-          border-radius: $border-radius;
-          color: #333;
-        }
-      }
-
-      &.dropdown {
-        .dropdown-menu {
-          display: none;
-          position: absolute;
-          background: black;
-          list-style: none;
-          padding: 5px 0;
-          box-shadow: $shadow;
-          min-width: 180px; // Minimum width for dropdown
-          max-width: 90vw; // Ensure it doesn't exceed 90% of the viewport width
-          border-radius: $border-radius;
-          z-index: 1000;
-          overflow-wrap: break-word; // Prevent text overflow
-          left: 0; // Align dropdown to the left by default
-          transform: translateX(0); // Reset any horizontal overflow
-
-          // Adjust position if dropdown overflows the viewport
-          @media (max-width: 768px) {
-            right: 0; // Align to the right for smaller screens
-            left: auto; // Override left alignment
-          }
-
-          li {
-            padding: 8px 15px;
-            transition: background 0.3s;
-
-            &:hover {
-              background: $hover-bg;
-            }
-          }
-        }
-
-        &:hover > .dropdown-menu {
-          display: block;
-        }
-      }
-    }
-  }
-
-  .chatbot {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    box-shadow: $shadow;
-    cursor: pointer;
-    margin-left: auto; // Aligns the chatbot to the right
-
-    .chatbot-img {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-    }
-
-    &:hover {
-      background: $hover-bg;
-    }
-  }
-
-  /* Authentication Buttons */
-  .auth {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-
-    .login, .signup {
-      color: white;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-weight: bold;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s ease-in-out, transform 0.2s;
-    }
-
-    .login {
-      background: #6b9bff;
-
-      &:hover {
-        background: darken(#6b9bff, 10%);
-        transform: scale(1.05);
-      }
-    }
-
-    .signup {
-      background: #ff6b6b;
-
-      &:hover {
-        background: darken(#ff6b6b, 10%);
-        transform: scale(1.05);
-      }
-
-      &:disabled {
-        background: gray;
-        cursor: not-allowed;
-        transform: none;
-      }
-    }
-  }
-
-  /* User Menu */
-  .user-menu {
-    position: relative;
-
-    .user-icon {
-      background: #f1c40f;
-      color: black;
-      font-size: 18px;
-      padding: 12px;
-      border-radius: 50%;
-      cursor: pointer;
-      border: none;
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        background: darken(#f1c40f, 10%);
-        transform: scale(1.1);
-      }
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: #2c3e50;
-      list-style: none;
-      padding: 10px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 180px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px);
-      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-
-      li {
-        padding: 8px 15px;
-        transition: background 0.3s;
-
-        a {
-          text-decoration: none;
-          color: white;
-          font-weight: bold;
-          display: block;
-        }
-
-        &:hover {
-          background: #ff6b6b;
-
-          a {
-            color: rgb(0, 0, 0);
-          }
-        }
-      }
-    }
-
-    &.active .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-    position: relative;
-
-    .menu-toggle {
-      display: block;
-      background: $primary-color;
-      color: white;
-      padding: 10px 15px;
-      border-radius: $border-radius;
-      cursor: pointer;
-      font-size: 16px;
-      text-align: center;
-      width: auto; // Adjust width for better alignment
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-
-    .nav-list {
-      flex-direction: column;
-      width: 60%;
-      align-items: flex-start;
-      gap: 10px;
-      display: none; // Initially hidden
-      background: black; // Black background for nav items
-      padding: 10px;
-      border-radius: $border-radius;
-
-      &.active {
-        display: flex; // Show items when active
-      }
-
-      li {
-        width: 100%;
-
-        a {
-          display: block;
-          width: 100%;
-          padding: 10px;
-          color: white; // Ensure text is visible on black background
-          text-align: left;
+          transform: scale(1.1);
         }
       }
 
       .dropdown-menu {
-        position: relative;
-        box-shadow: none;
+        position: absolute;
+        right: 0;
+        top: 110%;
+        background: #2c3e50;
+        border-radius: $radius;
+        padding: 10px 0;
+        width: 190px;
+        display: none;
+        box-shadow: $shadow;
+        z-index: 999;
+
+        li {
+          padding: 8px 16px;
+          list-style: none;
+
+          a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+              background: $highlight;
+              color: black;
+              border-radius: $radius;
+              cursor: pointer;
+            }
+          }
+        }
       }
-    }
 
-    .chatbot {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start; // Align with nav items
-      margin-left: 0; // Reset margin for smaller screens
-      background: none; // Remove background for the container
-      padding: 0; // Remove padding for the container
-
-      .chatbot-img {
-        width: 50px; // Adjust size for smaller screens
-        height: 50px;
-        border-radius: 50%; // Make the image round
-        box-shadow: none; // Remove shadow for smaller screens
+      &.active .dropdown-menu {
+        display: block;
       }
     }
   }
 }
 
-@media (min-width: 769px) {
+// Responsive for mobile/tablet
+@media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
-    align-items: center;
-
-    .nav-list {
-      flex-direction: row;
-      display: flex;
-      gap: 30px;
-    }
+    flex-direction: column;
+    align-items: flex-start;
 
     .menu-toggle {
-      display: none; // Hide toggle button on larger screens
+      display: block;
+      position: absolute;
+      right: 25px;
+      top: 15px;
     }
 
-    .chatbot {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background: white;
-      padding: 5px 10px;
-      border-radius: 20px;
+    .nav-list {
+      position: absolute;
+      top: 60px; // just below navbar
+      right: 20px;
+      background: #111;
+      border-radius: $radius;
+      padding: 12px;
       box-shadow: $shadow;
-      cursor: pointer;
-      margin-left: auto; // Aligns the chatbot to the right
+      flex-direction: column;
+      width: 240px;
+      gap: 12px;
+      display: none;
+      z-index: 999;
 
-      .chatbot-img {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
+      &.active {
+        display: flex;
       }
 
-      &:hover {
-        background: $hover-bg;
+      li {
+        width: 100%;
+        text-align: center;
+
+        a,
+        button {
+          width: 100%;
+          text-align: left;
+          padding: 10px 15px;
+          font-size: 15px;
+        }
+      }
+
+      .auth {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+
+        .login,
+        .signup {
+          width: 100%;
+          font-size: 14px;
+          padding: 10px;
+          text-align: center;
+        }
+      }
+
+      .chatbot {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        .chatbot-img {
+          width: 38px;
+          height: 38px;
+        }
+      }
+
+      .user-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .user-icon {
+          margin-top: 8px;
+        }
+
+        .dropdown-menu {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 105%;
+          width: 90%;
+        }
       }
     }
   }

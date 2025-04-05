@@ -1,0 +1,47 @@
+<div class="fun-nav-wrapper">
+
+    <!-- Memes Section -->
+    <section class="memes-section">
+      <h2>😹 Cat Memes & Funny Tales</h2>
+      <div class="meme" *ngFor="let meme of memes">
+        <h3>{{ meme.title }} {{ meme.emoji }}</h3>
+        <p>{{ meme.text }}</p>
+      </div>
+    </section>
+  
+    <!-- Forums Section -->
+    <section class="forum-section">
+      <h2>💬 Cat Chat Forums</h2>
+      <div class="forum-card" *ngFor="let post of forumPosts">
+        <h4>Q: {{ post.question }}</h4>
+        <ul>
+          <li *ngFor="let reply of post.replies">💬 {{ reply }}</li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- Blogs Section -->
+    <section class="blog-section">
+      <h2>📝 Paws & Posts: Cat Lover Blogs</h2>
+      <div class="blog-card" *ngFor="let blog of blogs">
+        <h3>{{ blog.title }}</h3>
+        <h5>by {{ blog.author }}</h5>
+        <p>{{ blog.content }}</p>
+        <div class="tags">
+          <span *ngFor="let tag of blog.tags">#{{ tag }}</span>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Expert Advice Section -->
+    <section class="expert-section">
+      <h2>🎓 Expert Advice Corner</h2>
+      <div class="tip-card" *ngFor="let tip of expertTips">
+        <h4>{{ tip.title }}</h4>
+        <p>{{ tip.description }}</p>
+        <p class="contact">📧 Reach out: <a href="mailto:{{ tip.contact }}">{{ tip.contact }}</a></p>
+      </div>
+    </section>
+  
+  </div>
+  

@@ -1,0 +1,150 @@
+.adopt-nav-wrapper {
+    padding: 2rem;
+  
+    section {
+      margin-bottom: 3rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+  
+    /* Shelters Section */
+    .shelter-section {
+      background: #fef6e4;
+      border: 2px solid #ffcc80;
+      border-radius: 12px;
+      padding: 2rem;
+  
+      .shelter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+  
+      .shelter-card {
+        background: #fff8e1;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: 0.3s;
+  
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+  
+        h3 {
+          color: #ef6c00;
+          margin-bottom: 0.5rem;
+        }
+  
+        .status {
+          font-weight: bold;
+          &.open { color: #2e7d32; }
+          &.closed { color: #c62828; }
+        }
+  
+        .visit-btn, .contact-btn {
+          margin-top: 0.5rem;
+          margin-right: 0.5rem;
+          padding: 0.4rem 0.8rem;
+          background: #ffa726;
+          border: none;
+          border-radius: 6px;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.2s;
+          &:hover {
+            background: #fb8c00;
+          }
+        }
+      }
+    }
+  
+    /* Stories Section */
+    .stories-section {
+      background: #f0faff;
+      border: 2px solid #81d4fa;
+      padding: 2rem;
+      border-radius: 12px;
+  
+      .story-card {
+        background: #ffffff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  
+        h4 {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+          color: #0277bd;
+        }
+  
+        .story-text {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+          color: #333;
+        }
+  
+        .actions button {
+          background: #e91e63;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          padding: 0.4rem 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          &:hover {
+            background: #c2185b;
+          }
+        }
+  
+        .comments {
+          margin-top: 1rem;
+  
+          h5 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+          }
+  
+          .comment {
+            background: #f1f1f1;
+            border-radius: 6px;
+            padding: 0.5rem;
+            margin-bottom: 0.3rem;
+          }
+  
+          textarea {
+            width: 100%;
+            height: 60px;
+            border-radius: 6px;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            resize: none;
+            margin-top: 0.5rem;
+          }
+  
+          button {
+            margin-top: 0.5rem;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 0.4rem 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+              background: #388e3c;
+            }
+          }
+        }
+      }
+    }
+  }
+  

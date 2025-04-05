@@ -1,0 +1,122 @@
+.fun-nav-wrapper {
+    padding: 2rem;
+  
+    section {
+      margin-bottom: 3rem;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+        color: #2c3e50;
+      }
+    }
+  
+    /* Memes Section */
+    .memes-section {
+      background: #fff8dc;
+      padding: 1.5rem;
+      border-radius: 12px;
+  
+      .meme {
+        background: #fff;
+        border-left: 4px solid #fbc02d;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+  
+        h3 {
+          font-size: 1.2rem;
+          color: #ff8f00;
+        }
+      }
+    }
+  
+    /* Forums Section */
+    .forum-section {
+      background: #f0f4c3;
+      padding: 1.5rem;
+      border-radius: 12px;
+  
+      .forum-card {
+        background: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        border-left: 4px solid #aed581;
+  
+        h4 {
+          font-weight: bold;
+          color: #33691e;
+        }
+  
+        ul {
+          margin: 0.5rem 0 0;
+          padding-left: 1.2rem;
+  
+          li {
+            margin-bottom: 0.3rem;
+          }
+        }
+      }
+    }
+  
+    /* Blogs Section */
+    .blog-section {
+      background: linear-gradient(to right, #ffebee, #fce4ec);
+      padding: 1.5rem;
+      border-radius: 12px;
+  
+      .blog-card {
+        background: #fff;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        border-left: 5px solid #ec407a;
+  
+        h3 {
+          color: #d81b60;
+        }
+  
+        .tags {
+          margin-top: 0.5rem;
+          span {
+            background: #fce4ec;
+            border-radius: 6px;
+            padding: 0.2rem 0.6rem;
+            margin-right: 0.3rem;
+            font-size: 0.8rem;
+            color: #880e4f;
+          }
+        }
+      }
+    }
+  
+    /* Expert Section */
+    .expert-section {
+      background: #e3f2fd;
+      padding: 1.5rem;
+      border-radius: 12px;
+  
+      .tip-card {
+        background: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        border-left: 4px solid #42a5f5;
+        margin-bottom: 1.2rem;
+  
+        h4 {
+          color: #1565c0;
+        }
+  
+        .contact {
+          margin-top: 0.5rem;
+          a {
+            color: #0d47a1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // Ensure HttpClientModule is imported
+import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { WhyChooseUsComponent } from "./components/why-choose-us/why-choose-us.component";
@@ -13,7 +13,7 @@ import { CareSectionComponent } from "./components/care-section/care-section.com
 import { SignupComponent } from "./components/signup/signup.component";
 import { LoginComponent } from "./components/login/login.component";
 import { CommonModule } from '@angular/common';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -41,16 +41,25 @@ import { Router, RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'cats-for-cuteness';
 
-  showMainContent: boolean=true;
-
-  constructor(private router: Router) {
-    this.router.events.subscribe(() => {
-      this.showMainContent = this.router.url !== '/shop' && this.router.url!=='/order';
-    });
-  }
-
   showSignup = false;
   showLogin = false;
+  showMainContent = true;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.showMainContent = !(
+          event.urlAfterRedirects.includes('/buyCat') ||
+          event.urlAfterRedirects.includes('/order') ||
+          event.urlAfterRedirects.includes('/shopNav') ||
+          event.urlAfterRedirects.includes('/funNav') ||
+          event.urlAfterRedirects.includes('/adoptNav') ||
+          event.urlAfterRedirects.includes('/careNav') ||
+          event.urlAfterRedirects.includes('/contact')
+        );
+      }
+    });
+  }
 
   openSignup() {
     console.log("Signup button clicked");
@@ -68,5 +77,4 @@ export class AppComponent {
     this.showSignup = false;
     this.showLogin = false;
   }
-
 }

@@ -1,0 +1,93 @@
+<div class="care-wrapper">
+
+    <section class="hero-section">
+        <h1>Complete Cat Care Guide</h1>
+        <p>Master everything from behavior to grooming, and emotional connection to health care.</p>
+    </section>
+
+    <!-- Behavior -->
+    <section class="behavior-section card-style">
+        <h2>Understanding Cat Behaviors</h2>
+        <div class="behavior-grid">
+            <div *ngFor="let b of behaviors" class="behavior-card">
+                <h3>{{ b.behavior }}</h3>
+                <p>{{ b.meaning }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Traits -->
+    <section class="traits-section highlight-box">
+        <h2>Special Traits of Cats</h2>
+        <div class="traits-grid">
+            <div class="trait-card">Graceful</div>
+            <div class="trait-card">Curious</div>
+            <div class="trait-card">Territorial</div>
+            <div class="trait-card">Strong-willed</div>
+        </div>
+    </section>
+
+    <!-- Mistakes -->
+    <section class="mistakes-section accordion-style">
+        <h2>Common Mistakes & Solutions</h2>
+        <div *ngFor="let m of beginnerMistakes" class="mistake-item">
+            <h4>❌ {{ m.mistake }}</h4>
+            <p><strong>Solution:</strong> {{ m.solution }}</p>
+        </div>
+    </section>
+
+    <!-- Sexual Health -->
+    <section class="sexual-section quote-style">
+        <h2>Sexual Health & Needs</h2>
+        <ul>
+            <li *ngFor="let tip of sexualHealthTips">✔️ {{ tip }}</li>
+        </ul>
+    </section>
+
+    <!-- Self-Care -->
+    <section class="selfcare-section dark-style">
+        <h2>Self-Grooming & Care</h2>
+        <ul>
+            <li *ngFor="let tip of selfCareTips">🧼 {{ tip }}</li>
+        </ul>
+    </section>
+
+    <!-- Training -->
+    <section class="training-section video-style">
+        <h2>Train Your Cat the Right Way</h2>
+        <ul>
+            <li>Clicker training with treats</li>
+            <li>Short sessions daily are better</li>
+            <li>Positive reinforcement only</li>
+        </ul>
+    </section>
+
+    <!-- Emotional Support -->
+    <section class="emotional-section image-bg">
+        <h2>Emotional Bonding</h2>
+        <p>Talk to your cat softly. Let them approach. Respect their moods and you'll earn their heart.</p>
+    </section>
+
+    <!-- Cat Feelings -->
+    <section class="feelings-section">
+        <h2>Understanding Their Feelings</h2>
+        <p class="feelings-intro">Cats express emotions subtly. Here’s how to interpret their feelings through body
+            language and actions:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feeling</th>
+                    <th>Behavioral Cues</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let f of catFeelings">
+                    <td>{{ f.feeling }}</td>
+                    <td>{{ f.cue }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+</div>

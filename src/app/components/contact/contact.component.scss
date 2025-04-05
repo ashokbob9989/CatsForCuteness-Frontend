@@ -1,0 +1,150 @@
+.contact-wrapper {
+    background: linear-gradient(135deg, #fff9e6, #fce4ec);
+    padding: 3rem;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  
+    .contact-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ff4081;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px #f8bbd0;
+    }
+  
+    .contact-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+  
+      .contact-form {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+  
+        input, textarea {
+          padding: 1rem;
+          border: 2px solid #ffdede;
+          border-radius: 1rem;
+          font-size: 1rem;
+          background: #fff;
+          transition: border-color 0.3s;
+  
+          &:focus {
+            border-color: #ff4081;
+            outline: none;
+          }
+        }
+  
+        button {
+          background-color: #ff4081;
+          color: white;
+          padding: 0.8rem 1.5rem;
+          border: none;
+          border-radius: 2rem;
+          cursor: pointer;
+          transition: background 0.3s;
+          font-weight: bold;
+  
+          &:hover {
+            background-color: #e73370;
+          }
+        }
+      }
+  
+      .contact-info {
+        flex: 1;
+        min-width: 250px;
+        background: #fff0f6;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 12px rgba(255, 64, 129, 0.2);
+  
+        h3 {
+          color: #c2185b;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          margin: 0.5rem 0;
+        }
+  
+        .social-links {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+  
+          a {
+            color: #ff4081;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  
+    .feedback-box {
+      margin-top: 3rem;
+      text-align: center;
+  
+      h2 {
+        font-size: 1.8rem;
+        color: #ff6f91;
+        margin-bottom: 1rem;
+      }
+  
+      textarea {
+        width: 60%;
+        height: 100px;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px dashed #f8bbd0;
+        font-size: 1rem;
+        resize: none;
+      }
+  
+      button {
+        margin-top: 1rem;
+        padding: 0.7rem 2rem;
+        background: #ff4081;
+        color: white;
+        border: none;
+        border-radius: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: #e91e63;
+        }
+      }
+    }
+  
+    .chat-cat-icon {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      font-size: 2.2rem;
+      background: #fff9f9;
+      border: 2px solid #ffd2e1;
+      padding: 0.7rem;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(255, 105, 135, 0.4);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
