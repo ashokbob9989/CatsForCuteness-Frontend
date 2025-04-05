@@ -6,6 +6,10 @@ import { AdoptNavComponent } from './components/adopt-nav/adopt-nav.component';
 import { CareNavComponent } from './components/care-nav/care-nav.component';
 import { FunNavComponent } from './components/fun-nav/fun-nav.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { TransactionHistoryComponent } from './components/transaction-history/transaction-history.component';
 
 export const routes: Routes = [
     {path: 'buyCat', component: BuyCatComponent},
@@ -14,5 +18,9 @@ export const routes: Routes = [
     {path: 'adoptNav', component: AdoptNavComponent},
     {path: 'careNav', component: CareNavComponent},
     {path: 'funNav', component: FunNavComponent},
-    {path: 'contact', component: ContactComponent}
+    {path: 'contact', component: ContactComponent},
+    {path: 'profile', component: ProfileComponent},
+    {path: 'wishlist', component: WishlistComponent},
+    {path: 'orders', component: OrdersComponent},
+    {path: 'transactionHistory', component: TransactionHistoryComponent}
 ];

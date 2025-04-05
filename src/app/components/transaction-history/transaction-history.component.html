@@ -1,0 +1,44 @@
+<div class="transaction-container" *ngIf="transactions.length > 0; else noTransactions">
+    <h2 class="transaction-title">Transaction History</h2>
+  
+    <div class="transaction-card" *ngFor="let tx of transactions">
+      <div class="tx-header">
+        <div>
+          <span class="tx-id">TX ID:</span> {{ tx.id }}
+        </div>
+        <div class="tx-date">
+          {{ tx.date | date: 'mediumDate' }} • {{ tx.time }}
+        </div>
+      </div>
+  
+      <div class="tx-body">
+        <div class="tx-details">
+          <p><strong>Amount:</strong> ₹{{ tx.amount }}</p>
+          <p><strong>Payment Mode:</strong> {{ tx.mode }}</p>
+          <p><strong>Charges:</strong> ₹{{ tx.charges }}</p>
+          <p *ngIf="tx.cardUsed">
+            <strong>Card:</strong> **** **** **** {{ tx.cardLast4 }} ({{ tx.cardType }})
+          </p>
+          <p *ngIf="!tx.cardUsed"><strong>Card:</strong> Not Used</p>
+          <p><strong>Status:</strong> 
+            <span class="status" [ngClass]="tx.status.toLowerCase()">{{ tx.status }}</span>
+          </p>
+        </div>
+  
+        <div class="tx-qr">
+          <img src="assets/images/qr-placeholder.png" alt="QR Code" />
+          <p class="qr-label">Txn Proof</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #noTransactions>
+    <div class="no-tx">
+      <img src="assets/images/no-tx.png" alt="No Transactions" />
+      <h3>No Transactions Yet</h3>
+      <p>Start shopping to see your transaction history!</p>
+      <button routerLink="/shop" class="shop-btn">Explore Now</button>
+    </div>
+  </ng-template>
+  

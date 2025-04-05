@@ -57,14 +57,5 @@
       <h3>Expected Delivery</h3>
       <p>{{ deliveryCountdown }}</p>
     </div>
-  
-    <aside class="past-orders">
-      <h3>Your Past Orders</h3>
-      <div *ngFor="let order of pastOrders" class="order-card">
-        <p><strong>Cat:</strong> {{ order.cat }}</p>
-        <p><strong>Status:</strong> {{ order.status }}</p>
-        <p><strong>Delivery Date:</strong> {{ order.deliveryDate }}</p>
-      </div>
-    </aside>
   </div>
   

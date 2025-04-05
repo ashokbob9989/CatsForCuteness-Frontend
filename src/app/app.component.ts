@@ -55,8 +55,12 @@ export class AppComponent {
           event.urlAfterRedirects.includes('/funNav') ||
           event.urlAfterRedirects.includes('/adoptNav') ||
           event.urlAfterRedirects.includes('/careNav') ||
-          event.urlAfterRedirects.includes('/contact')
-        );
+          event.urlAfterRedirects.includes('/contact') || 
+          event.urlAfterRedirects.includes('/profile') || 
+          event.urlAfterRedirects.includes('/wishlist') || 
+          event.urlAfterRedirects.includes('/orders') || 
+          event.urlAfterRedirects.includes('/transactionHistory') 
+        );        
       }
     });
   }

@@ -1,0 +1,72 @@
+<div class="profile-container">
+    <h2>My Profile 🐾</h2>
+  
+    <!-- Credentials -->
+    <div class="profile-section">
+      <h3>Personal Details</h3>
+      <div class="profile-item">
+        <label>Full Name:</label>
+        <span *ngIf="!editMode.name">{{ user.fullName }}</span>
+        <input *ngIf="editMode.name" [(ngModel)]="user.fullName"  title="fullName"/>
+        <button (click)="toggleEdit('name')">{{ editMode.name ? 'Save' : 'Edit' }}</button>
+      </div>
+  
+      <div class="profile-item">
+        <label>Username:</label>
+        <span *ngIf="!editMode.username">{{ user.username }}</span>
+        <input *ngIf="editMode.username" [(ngModel)]="user.username" title="username"/>
+        <button (click)="toggleEdit('username')">{{ editMode.username ? 'Save' : 'Edit' }}</button>
+      </div>
+  
+      <div class="profile-item">
+        <label>Email:</label>
+        <span *ngIf="!editMode.email">{{ user.email }}</span>
+        <input *ngIf="editMode.email" [(ngModel)]="user.email" title="email"/>
+        <button (click)="toggleEdit('email')">{{ editMode.email ? 'Save' : 'Edit' }}</button>
+      </div>
+  
+      <div class="profile-item">
+        <label>Phone:</label>
+        <span *ngIf="!editMode.phone">{{ user.phone }}</span>
+        <input *ngIf="editMode.phone" [(ngModel)]="user.phone" title="phone"/>
+        <button (click)="toggleEdit('phone')">{{ editMode.phone ? 'Save' : 'Edit' }}</button>
+      </div>
+  
+      <div class="profile-item password-reset">
+        <label>Password:</label>
+        <button (click)="resetPassword()">Send Reset Link to Email</button>
+      </div>
+    </div>
+  
+    <!-- Address -->
+    <div class="profile-section">
+      <h3>Address Details</h3>
+      <div class="profile-item">
+        <label>City:</label>
+        <input [(ngModel)]="user.address.city" title="addressCity"/>
+      </div>
+      <div class="profile-item">
+        <label>State:</label>
+        <input [(ngModel)]="user.address.state" title="addressSate"/>
+      </div>
+      <div class="profile-item">
+        <label>Country:</label>
+        <input [(ngModel)]="user.address.country" title="addressCountry"/>
+      </div>
+      <div class="profile-item">
+        <label>Pincode:</label>
+        <input [(ngModel)]="user.address.pincode" title="addressPincode"/>
+      </div>
+      <div class="address-options">
+        <button class="primary" (click)="setDefaultAddress()">Set as Default Address</button>
+        <button (click)="addAddress()">Add New Address</button>
+      </div>
+    </div>
+  
+    <!-- Orders -->
+    <div class="profile-section">
+      <h3>Orders Summary</h3>
+      <p>Total Orders Placed: <strong>{{ totalOrders }}</strong></p>
+    </div>
+  </div>
+  

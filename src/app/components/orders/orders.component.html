@@ -1,0 +1,39 @@
+<div class="orders-container" *ngIf="orders.length > 0; else noOrders">
+    <h2 class="orders-title">Your Orders</h2>
+  
+    <div class="order-card" *ngFor="let order of orders">
+      <div class="order-header">
+        <div class="order-id">Order ID: {{ order.id }}</div>
+        <div class="order-date">Placed on: {{ order.date | date: 'mediumDate' }}</div>
+      </div>
+  
+      <div class="order-body">
+        <img [src]="order.image" alt="Cat Item" class="order-img" />
+  
+        <div class="order-info">
+          <h3>{{ order.name }}</h3>
+          <p>{{ order.description }}</p>
+          <p><strong>Qty:</strong> {{ order.quantity }}</p>
+          <p><strong>Total:</strong> ₹{{ order.total }}</p>
+        </div>
+  
+        <div class="order-status">
+          <span class="status-tag" [ngClass]="getStatusClass(order.status)">
+            {{ order.status }}
+          </span>
+          <p class="expected-date">Expected: {{ order.expectedDelivery | date: 'mediumDate' }}</p>
+          <button class="reorder-btn" (click)="reorder(order)">Reorder</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #noOrders>
+    <div class="no-orders">
+      <img src="assets/images/no-orders.png" alt="No Orders" />
+      <h3>No orders yet!</h3>
+      <p>Explore cute cat items and adoptables now!</p>
+      <button routerLink="/shop" class="shop-btn">Start Shopping</button>
+    </div>
+  </ng-template>
+  

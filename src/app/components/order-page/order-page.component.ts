@@ -32,19 +32,6 @@ export class OrderPageComponent implements OnInit {
   deliveryCountdown = '';
   intervalId: any;
 
-  pastOrders = [
-    {
-      cat: 'Persian Kitty',
-      status: 'Delivered',
-      deliveryDate: '2025-03-20',
-    },
-    {
-      cat: 'Siberian Fluffy',
-      status: 'Expected Soon',
-      deliveryDate: '2025-04-10',
-    },
-  ];
-
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {

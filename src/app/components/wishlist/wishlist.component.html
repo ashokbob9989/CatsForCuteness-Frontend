@@ -1,0 +1,33 @@
+<div class="wishlist-container" *ngIf="wishlistItems.length > 0; else emptyWishlist">
+    <div class="wishlist-card" *ngFor="let item of wishlistItems">
+      <img [src]="item.image" alt="Item Image" class="wishlist-img" />
+  
+      <div class="wishlist-info">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.description }}</p>
+        <div class="wishlist-tags">
+          <span class="tag" *ngIf="item.tag">{{ item.tag }}</span>
+        </div>
+        <div class="wishlist-meta">
+          <p class="price">₹{{ item.price }}</p>
+          <p class="date">Added on: {{ item.dateAdded | date }}</p>
+        </div>
+      </div>
+  
+      <div class="wishlist-actions">
+        <button class="add-cart-btn" (click)="addToCart(item)">Add to Cart</button>
+        <button class="delete-btn" (click)="removeFromWishlist(item)" title="deleteButton">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #emptyWishlist>
+    <div class="empty-state">
+      <img src="assets/images/empty-wishlist.png" alt="Empty Wishlist" />
+      <h2>Your wishlist is currently empty</h2>
+      <button routerLink="/shop" class="explore-btn">Explore Items</button>
+    </div>
+  </ng-template>
+  
