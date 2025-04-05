@@ -2,15 +2,16 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shopping-page',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './shopping-page.component.html',
-  styleUrl: './shopping-page.component.scss'
+  templateUrl: './buy-cat.component.html',
+  styleUrl: './buy-cat.component.scss'
 })
-export class ShoppingPageComponent {
+export class BuyCatComponent {
   searchTerm = '';
   selectedBehavior = '';
   selectedBreed = '';
@@ -31,7 +32,11 @@ export class ShoppingPageComponent {
 
   cats: any[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
+
+  adoptCat(cat: any){
+    this.router.navigate(['/order'], {state: {cat}});
+  }
 
   ngOnInit(): void {
     this.http.get<any[]>('assets/all_cat_breeds_72.json').subscribe({
@@ -99,10 +104,6 @@ export class ShoppingPageComponent {
 
   viewDetails(cat: any) {
     this.selectedCat = cat;
-  }
-
-  adoptCat(cat: any) {
-    alert(`Adopting ${cat.name}... Redirecting to adoption/checkout flow!`);
   }
 
   likeCat(cat: any) {

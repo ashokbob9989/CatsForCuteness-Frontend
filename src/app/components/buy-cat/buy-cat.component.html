@@ -72,7 +72,7 @@
             {{ cat.inWishlist ? '💔' : '❤️' }}
           </button>
           <button class="adopt-btn" (click)="adoptCat(cat)" [attr.aria-label]="'Adopt ' + cat.name"
-            title="Adopt {{ cat.name }}">
+            title="Adopt {{ cat.name }}" routerLink="/order">
             Adopt Me
           </button>
         </div>

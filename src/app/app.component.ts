@@ -45,7 +45,7 @@ export class AppComponent {
 
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
-      this.showMainContent = this.router.url !== '/shop';
+      this.showMainContent = this.router.url !== '/shop' && this.router.url!=='/order';
     });
   }
 

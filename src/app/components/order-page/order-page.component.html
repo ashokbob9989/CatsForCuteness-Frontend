@@ -1,0 +1,70 @@
+<div class="order-page">
+    <h2>Complete Your Cat Adoption 🐱</h2>
+  
+    <form (ngSubmit)="placeOrder()" #orderForm="ngForm" class="order-form">
+      <div class="form-layout">
+        <!-- Left: Billing Info -->
+        <div class="billing-info">
+          <h3>Billing Information</h3>
+          <input type="text" placeholder="Full Name" [(ngModel)]="order.name" name="name" required />
+          <input type="email" placeholder="Email Address" [(ngModel)]="order.email" name="email" required />
+          <input type="tel" placeholder="Phone Number" [(ngModel)]="order.phone" name="phone" required />
+          
+          <div class="address-fields">
+            <input type="text" placeholder="Street Address" [(ngModel)]="order.address" name="address" required />
+            <div class="side-by-side">
+              <input type="text" placeholder="City" [(ngModel)]="order.city" name="city" required />
+              <input type="text" placeholder="State" [(ngModel)]="order.state" name="state" required />
+            </div>
+            <div class="side-by-side">
+              <input type="text" placeholder="Pincode" [(ngModel)]="order.pincode" name="pincode" required />
+            </div>
+          </div>
+  
+          <label class="whatsapp-updates">
+            <input type="checkbox" [(ngModel)]="order.whatsappUpdates" name="whatsappUpdates" />
+            <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
+            Get WhatsApp Updates
+          </label>
+        </div>
+  
+        <!-- Right: Order Summary and Cat Image -->
+        <div class="order-summary-block">
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-content">
+              <ul class="summary-list">
+                <li><strong>Cat:</strong> {{ adoptedCat?.name }}</li>
+                <li><strong>Price:</strong> ₹{{ adoptedCat?.price }}</li>
+                <li><strong>GST (5%):</strong> ₹{{ gst }}</li>
+                <li><strong>CGST (5%):</strong> ₹{{ cgst }}</li>
+                <li><strong>Delivery:</strong> ₹{{ deliveryCharge }}</li>
+                <li class="total"><strong>Total:</strong> ₹{{ total }}</li>
+              </ul>
+            </div>
+            <button type="submit" [disabled]="!orderForm.valid">Place Order</button>
+          </div>
+  
+          <!-- Cat Image at the Right Corner -->
+          <div class="cat-image-container" *ngIf="adoptedCat?.image">
+            <img [src]="adoptedCat.image" alt="{{ adoptedCat.name }}" />
+          </div>
+        </div>
+      </div>
+    </form>
+  
+    <div class="delivery-timer">
+      <h3>Expected Delivery</h3>
+      <p>{{ deliveryCountdown }}</p>
+    </div>
+  
+    <aside class="past-orders">
+      <h3>Your Past Orders</h3>
+      <div *ngFor="let order of pastOrders" class="order-card">
+        <p><strong>Cat:</strong> {{ order.cat }}</p>
+        <p><strong>Status:</strong> {{ order.status }}</p>
+        <p><strong>Delivery Date:</strong> {{ order.deliveryDate }}</p>
+      </div>
+    </aside>
+  </div>
+  
